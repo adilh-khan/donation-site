@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-+s0U0cF8bA+DcFst2uAcvlW7XKZGGYb5hFZAT3yASZ5jY4e6oHJG4q4jD4r8p3VOa4WZ+VY0M0zGv/JXLcQm2zA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="font-lexend">
+    <!-- Header Section -->
+    <header>
+        <section>
+            <!-- Nav Bar -->
+            <nav class="flex justify-around py-6 bg-[#F9F7F3] sticky top-0 z-50">
+                <div>
+                    <button id="blog-btn"
+                        class="btn btn-success py-3 px-8 text-white bg-[#B4F461] rounded-md border-none text-sm">Blog</button>
+                </div>
+                <div class="flex items-center gap-1">
+                    <img src="assets/logo.png" alt="">
+                    <h5 class="font-semibold text-sm">Donate United States</h5>
+                </div>
+                <div class="flex items-center gap-1 text-sm font-semibold">
+                    <img src="assets/coin.png" alt="">
+                    <h5 id="balance">5500</h5>
+                    <span>Dollar</span>
+                </div>
+            </nav>
+
+            <div id="pair-btn" class="flex items-center justify-center gap-x-6 mt-12 mb-8">
+                <button id="btn-donation" class="btn bg-[#B4F461] py-4 px-8">Donation</button>
+                <button id="btn-history" class="btn py-4 px-8">History</button>
+            </div>
+        </section>
+    </header>
+    <!-- End!!!! -->
+
+    <main class="h-screen overflow-y-scroll">
+        <section class="w-11/12 m-auto">
+            <div id="card-container" class="flex flex-col gap-y-8">
+                <!-- Card-1 -->
+                <div
+                    class="flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden max-w-5xl mx-auto border border-gray-300">
+                    <!-- Image Section -->
+                    <div class="md:w-1/2 p-6">
+                        <img class="w-full h-full  rounded-xl " src="assets/unitedway.png" alt="Flood Relief Image">
+                    </div>
+                    <!-- Content Section -->
+                    <div class="p-6 md:w-1/2 flex flex-col justify-between">
+                        <div>
+                            <button class="btn flex items-center gap-2 mb-4">
+                                <img src="assets/coin.png" alt="">
+                                <h5>
+                                    <span id="donate-balance-1">0</span>
+                                    <span>Dollar</span>
+                                </h5>
+                            </button>
+                        </div>
+                        <h2 class="mb-4 text-xl font-semibold text-gray-800">🌟 United Way, USA</h2>
+                        <p class="text-gray-600 mb-4">
+                            United Way is a national network that focuses on improving education, financial stability,
+                            and health in communities
+                            across the USA. They mobilize volunteers and donations to tackle local issues, supporting
+                            various initiatives that make
+                            a tangible impact on people's lives.
+                        </p>
+                        <input id="donate-field-1" type="number" placeholder="Write Donation Amount"
+                            class="input input-bordered w-full mb-4" />
+
+                        <button id="donate-btn-1"
+                            class="bg-green-500 text-white py-2 px-4 rounded-lg w-full hover:bg-green-600">
+                            Donate Now
+                        </button>
+                    </div>
+                </div>
+                <!-- Card-2 -->
+                <div
+                    class="flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden max-w-5xl mx-auto border border-gray-300">
+                    <!-- Image Section -->
+                    <div class="md:w-1/2 p-6">
+                        <img class="w-full h-full object-cover rounded-xl" src="assets/children.jpg"
+                            alt="Flood Relief Image">
+                    </div>
+                    <!-- Content Section -->
+                    <div class="p-6 md:w-1/2 flex flex-col justify-between">
+                        <div>
+                            <button class="btn flex items-center gap-2 mb-4">
+                                <img src="assets/coin.png" alt="">
+                                <h5>
+                                    <span id="donate-balance-2">600</span>
+                                    <span>Dollar</span>
+                                </h5>
+                            </button>
+                        </div>
+                        <h2 class="mb-4 text-xl font-semibold text-gray-800">🍽️ Feeding America, USA</h2>
+                        <p class="text-gray-600 mb-4">
+                            Feeding America is a nationwide network of food banks that works to alleviate hunger in
+                            America. Through food
+                            distribution, advocacy, and education, they aim to provide meals to those in need. They are
+                            committed to ensuring that
+                            everyone has access to enough nutritious food.
+                        </p>
+                        <input id="donate-field-2" type="number" placeholder="Write Donation Amount"
+                            class="input input-bordered w-full mb-4" />
+
+                        <button id="donate-btn-2"
+                            class="bg-green-500 text-white py-2 px-4 rounded-lg w-full hover:bg-green-600">
+                            Donate Now
+                        </button>
+                    </div>
+                </div>
+                <!-- Card-3 -->
+                <div
+                    class="flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden max-w-5xl mx-auto border border-gray-300">
+                    <!-- Image Section -->
+                    <div class="md:w-1/2 p-6">
+                        <img class="w-full h-full object-cover rounded-xl" src="assets/noakhali.png"
+                            alt="Flood Relief Image">
+                    </div>
+                    <!-- Content Section -->
+                    <div class="p-6 md:w-1/2 flex flex-col justify-between">
+                        <div>
+                            <button class="btn flex items-center gap-2 mb-4">
+                                <img src="assets/coin.png" alt="">
+                                <h5>
+                                    <span id="donate-balance-3">2400</span>
+                                    <span>Dollar</span>
+                                </h5>
+                            </button>
+                        </div>
+                        <h2 class="mb-4 text-xl font-semibold text-gray-800">🏡 Habitat for Humanity, USA</h2>
+                        <p class="text-gray-600 mb-4">
+                            Habitat for Humanity is dedicated to building and improving homes for families in need. They
+                            engage volunteers and
+                            donors to create affordable housing solutions and promote home ownership. Their mission is
+                            to
+                            eliminate poverty housing
+                            and homelessness from the world.
+                        </p>
+                        <input id="donate-field-3" type="number" placeholder="Write Donation Amount"
+                            class="input input-bordered w-full mb-4" />
+
+                        <button id="donate-btn-3"
+                            class="bg-green-500 text-white py-2 px-4 rounded-lg w-full hover:bg-green-600">
+                            Donate Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="history-container" class="hidden w-6/12m-auto text-center"></div>
+        </section>
+    </main>
+    <footer class="footer footer-center bg-base-300 text-base-content p-4 mt-6">
+        <aside>
+            <p>Copyright © 09/24/2024 - All right reserved by ACME Industries Ltd</p>
+        </aside>
+    </footer>
+
+    <script src="JavaScript/index.js"></script>
+</body>
+
+</html>
